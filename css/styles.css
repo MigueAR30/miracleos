@@ -1,0 +1,151 @@
+/* ! FORMAT */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+  /* border: solid red 1px; */
+}
+
+:root {
+  /* fuentes */
+  --font-extra-light: 200;
+  --font-light: 300;
+  --font-regular: 400;
+  --font-semibold: 600;
+  --font-bold: 700;
+  --font-black: 800;
+
+  --font-sm: 14px;
+  --font-smd: 16px;
+  --font-sd: 18px;
+  --font-md: 32px;
+  --font-xl: 48px;
+
+  /* colores */
+  --background: #020103;
+  --text-white: #fff;
+  --text-smgrey: #d0d0d0;
+}
+
+/* ? BODY */
+
+body {
+  color: var(--text-white);
+
+  /* colores */
+
+  background-color: var(--background);
+
+  background-image: url(/assets/img/BACKGROUND__BODY.jpg);
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  background-attachment: scroll;
+}
+
+a {
+  color: var(--text-white);
+}
+
+/* ! ==================================== HEADER ==================================== */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  padding: 15px 140px 15px 25px;
+  font-size: var(--font-smd);
+  font-weight: var(--font-regular);
+  color: var(--text-white);
+  height: 70px;
+}
+
+.navbar::after {
+  scroll-margin-bottom: 65px;
+}
+.navbar__icon {
+  width: 150px;
+  margin-top: 5px;
+}
+
+.navbar__list {
+  display: flex;
+  gap: 30px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navbar__list li:nth-child(3) {
+  font-size: var(--font-smd);
+  font-weight: var(--font-bold);
+}
+
+/*! ==================================== MAIN ==================================== */
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+
+.arrow__up {
+  position: fixed;
+  bottom: 3px;
+  right: 8px;
+}
+
+/*? ==================================== HERO ==================================== */
+
+#hero {
+  display: flex;
+  flex-direction: column;
+  width: 90vw;
+  height: 100vh;
+  background-image: url(/assets/img/ROUNDEDBACKGROUND.png);
+  background-size: 85%;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+#hero h1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-size: 5rem;
+  font-weight: var(--font-black);
+  position: sticky;
+  top: 0;
+  text-transform: uppercase;
+  text-shadow: 4px 4px 0 #020103, 4px -4px 0 #020103, -4px 4px 0 #020103,
+    -4px -4px 0 #020103, 4px 0px 0 #020103, 0px 4px 0 #020103,
+    -4px 0px 0 #020103, 0px -4px 0 #020103;
+}
+
+/*? ==================================== INFO ==================================== */
+
+#info {
+  display: flex;
+  max-width: 700px;
+  height: 700px;
+  background-image: none;
+}
+
+/*? ==================================== DISEÑO ==================================== */
+
+/* #design video {
+  width: 100%;
+  height: auto;
+  display: block;
+  outline: none;
+  border: none;
+  background: transparent;
+  color: transparent;
+  cursor: pointer;
+} */

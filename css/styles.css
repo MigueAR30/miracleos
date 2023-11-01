@@ -139,13 +139,11 @@ main {
 
 /*? ==================================== DISEÑO ==================================== */
 
-/* #design video {
-  width: 100%;
-  height: auto;
+#design video {
+  width: 100vw;
+  height: 95vh;
   display: block;
   outline: none;
   border: none;
-  background: transparent;
-  color: transparent;
   cursor: pointer;
-} */
+}

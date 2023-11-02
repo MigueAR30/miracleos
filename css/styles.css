@@ -36,6 +36,8 @@
   --span-about: #f6ff4b;
   --h2-about: #ff4f27;
   --text-blue: #256aff;
+
+  color: #5900ff;
 }
 
 /* ? BODY */
@@ -80,7 +82,7 @@ a {
   width: 100vw;
 
   /* TODO */
-  max-width: 1400px;
+  max-width: 1200px;
 }
 
 .navbar::after {
@@ -111,7 +113,7 @@ main {
   justify-content: center;
   align-items: center;
   gap: 60px;
-  max-width: 1000px;
+  max-width: 1200px;
 }
 
 .scroll__up,
@@ -134,6 +136,7 @@ main {
   background-size: 80%;
   background-position: top center;
   background-repeat: no-repeat;
+  max-width: 1400px;
 
   /* TODO */
   /* max-width: 1000px; */
@@ -176,6 +179,7 @@ main {
   background-position: center;
   background-repeat: no-repeat;
   background-size: 65%;
+  max-width: 1200px;
 }
 
 /* * CARDS */
@@ -193,7 +197,7 @@ main {
   gap: 20px;
   padding: 10px;
   width: 300px;
-  height: 450px;
+  height: 400px;
   background-image: url(/assets/img/cards/CARDS_BACKGROUND.png);
   border-radius: 100px 10px 100px 10px;
 }
@@ -214,23 +218,36 @@ main {
 }
 
 .info__cards-img {
-  width: 250px;
+  width: 200px;
   border-radius: 60px 10px 60px 10px;
 }
 
-.info__title h1 {
+.info__title h2 {
   font-size: 4rem;
   font-weight: var(--font-regular);
 }
 
+.info__title h2:hover {
+  /* transform: scale(1.005, 1.005); */
+  translate: 2px -2px;
+}
+
+.info__title::after:hover {
+}
+
 /*? ==================================== DISEÑO ==================================== */
+
+#design {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+}
 
 #design video {
   width: 97vw;
   height: 95vh;
-  display: block;
-  outline: none;
-  border: none;
   cursor: pointer;
 }
 
@@ -242,6 +259,7 @@ main {
   align-items: center;
   justify-content: center;
   height: 93vh;
+  width: 100%;
 }
 
 .about__container {
@@ -345,6 +363,7 @@ hr {
   width: 90vw;
   border-radius: 2px;
   height: 0.5px;
+  max-width: 1200px;
 }
 
 #contact {
@@ -355,6 +374,7 @@ hr {
   gap: 25px;
   width: 100%;
   height: 90vh;
+  max-width: 1200px;
 }
 
 #contact h2 {
@@ -408,6 +428,7 @@ footer {
   font-weight: var(--font-light);
   color: var(--text-grey);
   padding: 10px;
+  max-width: 1200px;
 }
 
 .footer__container {

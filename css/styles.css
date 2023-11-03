@@ -21,7 +21,7 @@
   --font-bold: 700;
   --font-black: 800;
 
-  --font-s: 12px;
+  --font-s: 10px;
   --font-sm: 14px;
   --font-smd: 16px;
   --font-sd: 18px;
@@ -59,7 +59,7 @@ body {
 
 body #about {
   background-image: url(/assets/img/BACKGROUND__ABOUT.png);
-  width: 98.5vw;
+  width: 98.9vw;
   background-size: 100% 100%;
 }
 
@@ -174,12 +174,6 @@ main {
 .hero__media-btn {
   display: none;
 }
-.hero__media-btn {
-  display: none;
-}
-.hero__media-btn {
-  display: none;
-}
 
 /*? ==================================== INFO ==================================== */
 
@@ -277,7 +271,6 @@ main {
   align-items: center;
   justify-content: center;
   height: 93vh;
-  width: 100%;
 }
 
 .about__container {

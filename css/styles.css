@@ -69,6 +69,11 @@ a {
 
 /* ! ==================================== HEADER ==================================== */
 
+#menu-toggle,
+.menu-label {
+  display: none;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -85,9 +90,6 @@ a {
   max-width: 1200px;
 }
 
-.navbar::after {
-  scroll-margin-bottom: 65px;
-}
 .navbar__icon {
   width: 150px;
   margin-top: 5px;
@@ -153,16 +155,20 @@ main {
   font-weight: var(--font-black);
 
   text-transform: uppercase;
-  text-shadow: 4px 4px 0 #020103, 4px -4px 0 #020103, -4px 4px 0 #020103,
+  /* text-shadow: 4px 4px 0 #020103, 4px -4px 0 #020103, -4px 4px 0 #020103,
     -4px -4px 0 #020103, 4px 0px 0 #020103, 0px 4px 0 #020103,
-    -4px 0px 0 #020103, 0px -4px 0 #020103;
+    -4px 0px 0 #020103, 0px -4px 0 #020103; */
+
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.72);
 }
 
 .hero__content p {
   font-size: var(--font-sd);
   font-weight: var(--font-light);
   text-transform: none;
-  text-shadow: 3px 3px 3px rgba(18, 0, 0, 1), -3px 0px 4px rgba(15, 0, 0, 1);
+  /* text-shadow: 3px 3px 3px rgba(18, 0, 0, 1), -3px 0px 4px rgba(15, 0, 0, 1); */
+
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.72);
 }
 
 .hero__media-btn {
@@ -225,6 +231,7 @@ main {
 
 .info__cards-text {
   max-width: 200px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.72);
 }
 
 .info__cards-img {
@@ -235,6 +242,7 @@ main {
 .info__title h2 {
   font-size: 4rem;
   font-weight: var(--font-regular);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.72);
 }
 
 .info__title h2:hover {
@@ -300,6 +308,8 @@ main {
   font-size: var(--font-xl);
   font-weight: var(--font-black);
   text-transform: uppercase;
+
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.72);
 }
 
 .about__info h2:hover {
@@ -313,6 +323,8 @@ main {
 .about__info p {
   font-size: var(--font-smd);
   font-weight: var(--font-light);
+
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.72);
 }
 
 .about__info p:hover {

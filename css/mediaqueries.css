@@ -27,19 +27,55 @@
 
   /*! NAV */
 
+  .menu-label {
+    display: flex;
+  }
+
+  .menu-label i {
+    font-size: 24px;
+  }
+
+  .navbar__list {
+    cursor: pointer;
+    position: absolute;
+    top: 70px;
+    /* right: 5px; */
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    background-image: url(/assets/img/BACKGROUND__BODY.jpg);
+    z-index: 2;
+    /* display: none; */
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+
+    transform: translateX(-500px);
+    transition: all 0.45s ease;
+  }
+
+  #menu-toggle:checked ~ .navbar__list {
+    /* display: flex; */
+    transform: translateX(0);
+  }
+
+  /* ______________________________ */
+
   .navbar {
     width: 80vw;
+    max-width: none;
+    padding: 0 15px;
+    flex-wrap: wrap;
   }
 
   .navbar__icon {
-    display: none;
+    display: flex;
     width: 100px;
   }
 
   /* TODO */
-  .navbar__list {
-    display: none;
-  }
 
   /*! HERO */
   #hero {
@@ -62,6 +98,7 @@
     font-size: 2rem;
     text-shadow: none;
     padding-top: 50px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.72);
   }
 
   .hero__media-btn {
@@ -83,32 +120,69 @@
 
   .hero__media--btn:hover {
     transform: scale(1.02);
-    background-color: #742df8;
+    background-color: #3a00a5;
+
+    box-shadow: 10px 10px 25px -3px rgba(0, 0, 0, 0.83);
+    -webkit-box-shadow: 10px 10px 25px -3px rgba(0, 0, 0, 0.83);
+    -moz-box-shadow: 10px 10px 25px -3px rgba(0, 0, 0, 0.83);
   }
 
   .hero__media--btn2:hover {
     transform: scale(1.02);
     background-color: #2d6df8;
+
+    box-shadow: 10px 10px 25px -3px rgba(0, 0, 0, 0.83);
+    -webkit-box-shadow: 10px 10px 25px -3px rgba(0, 0, 0, 0.83);
+    -moz-box-shadow: 10px 10px 25px -3px rgba(0, 0, 0, 0.83);
+
+    box-shadow: 10px 10px 25px -3px rgba(0, 0, 0, 0.83);
+    -webkit-box-shadow: 10px 10px 25px -3px rgba(0, 0, 0, 0.83);
+    -moz-box-shadow: 10px 10px 25px -3px rgba(0, 0, 0, 0.83);
   }
 
   .hero__media--btn:hover,
   .hero__media--btn2:hover {
     transition: all 0.3s ease;
+
+    box-shadow: 10px 10px 25px -3px rgba(0, 0, 0, 0.83);
+    -webkit-box-shadow: 10px 10px 25px -3px rgba(0, 0, 0, 0.83);
+    -moz-box-shadow: 10px 10px 25px -3px rgba(0, 0, 0, 0.83);
   }
 
   .hero__media--btn:active {
     background-color: #742df8;
     transform: scale(1.02);
+
+    box-shadow: 10px 10px 25px -3px rgba(0, 0, 0, 0.83);
+    -webkit-box-shadow: 10px 10px 25px -3px rgba(0, 0, 0, 0.83);
+    -moz-box-shadow: 10px 10px 25px -3px rgba(0, 0, 0, 0.83);
   }
 
   .hero__media--btn2:active {
     background-color: #2d6df8;
     transform: scale(1.02);
+
+    box-shadow: 10px 10px 25px -3px rgba(0, 0, 0, 0.83);
+    -webkit-box-shadow: 10px 10px 25px -3px rgba(0, 0, 0, 0.83);
+    -moz-box-shadow: 10px 10px 25px -3px rgba(0, 0, 0, 0.83);
+  }
+
+  .hero__media-title {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.72);
   }
 
   .hero__media--btn:active,
   .hero__media--btn2:active {
     transition: all 0.1s ease;
+
+    box-shadow: 10px 10px 25px -3px rgba(0, 0, 0, 0.83);
+    -webkit-box-shadow: 10px 10px 25px -3px rgba(0, 0, 0, 0.83);
+    -moz-box-shadow: 10px 10px 25px -3px rgba(0, 0, 0, 0.83);
+  }
+
+  .hero__media-title:hover,
+  .hero__media-title:active {
+    transform: translate(0.8px, -0.8px);
   }
 
   /*! INFO */
@@ -161,6 +235,7 @@
   .info__title h2 {
     font-size: 30px;
     font-weight: var(--font-bold);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.72);
   }
 
   /*! DESIGN */
@@ -201,12 +276,14 @@
     font-weight: var(--font-black);
     text-transform: uppercase;
     width: 80vw;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.72);
   }
 
   .about__info p {
     font-size: var(--font-sm);
     font-weight: var(--font-light);
     width: 80vw;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.72);
   }
 
   .about__info .span__linux {
@@ -263,6 +340,7 @@
     text-transform: uppercase;
     font-size: 2rem;
     font-weight: var(--font-bold);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.72);
   }
 
   .contact__container {
@@ -284,6 +362,7 @@
     gap: 5px;
     width: auto;
     /* height: 80%; */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.72);
   }
 
   input {

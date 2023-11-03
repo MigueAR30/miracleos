@@ -21,6 +21,7 @@
   --font-bold: 700;
   --font-black: 800;
 
+  --font-s: 12px;
   --font-sm: 14px;
   --font-smd: 16px;
   --font-sd: 18px;
@@ -281,6 +282,13 @@ main {
   top: 0;
 }
 
+.container:hover,
+.container:active {
+  box-shadow: 10px 10px 25px -3px rgba(0, 0, 0, 0.83);
+  -webkit-box-shadow: 10px 10px 25px -3px rgba(0, 0, 0, 0.83);
+  -moz-box-shadow: 10px 10px 25px -3px rgba(0, 0, 0, 0.83);
+}
+
 .about__info {
   display: flex;
   flex-direction: column;
@@ -415,6 +423,7 @@ textarea {
 input {
   padding: 10px;
   border-radius: 10px;
+  border: solid white 2px;
 }
 
 textarea {

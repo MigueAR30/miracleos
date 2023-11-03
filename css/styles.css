@@ -72,6 +72,13 @@ a {
 #menu-toggle,
 .menu-label {
   display: none;
+  cursor: pointer;
+}
+
+.user-log {
+  order: 2;
+  font-size: 20px;
+  cursor: pointer;
 }
 
 .navbar {
@@ -79,7 +86,7 @@ a {
   justify-content: space-between;
   align-items: center;
   align-content: center;
-  padding: 15px 100px 15px 25px;
+  padding: 25px 15px;
   font-size: var(--font-smd);
   font-weight: var(--font-regular);
   color: var(--text-white);
@@ -133,7 +140,7 @@ main {
   justify-content: flex-start;
   align-items: flex-start;
   width: 95vw;
-  height: 100vh;
+  height: 120vh;
   background-image: url(/assets/img/ROUNDEDBACKGROUND.png);
   background-size: 80%;
   background-position: top center;
@@ -155,9 +162,6 @@ main {
   font-weight: var(--font-black);
 
   text-transform: uppercase;
-  /* text-shadow: 4px 4px 0 #020103, 4px -4px 0 #020103, -4px 4px 0 #020103,
-    -4px -4px 0 #020103, 4px 0px 0 #020103, 0px 4px 0 #020103,
-    -4px 0px 0 #020103, 0px -4px 0 #020103; */
 
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.72);
 }
@@ -173,6 +177,28 @@ main {
 
 .hero__media-btn {
   display: none;
+}
+
+.hero__btn-title {
+  margin: 20px 0;
+  font-size: 24px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.72);
+}
+
+.hero__media--btn:hover {
+  background-color: #3a00a5;
+
+  box-shadow: 10px 10px 25px -3px rgba(0, 0, 0, 0.83);
+  -webkit-box-shadow: 10px 10px 25px -3px rgba(0, 0, 0, 0.83);
+  -moz-box-shadow: 10px 10px 25px -3px rgba(0, 0, 0, 0.83);
+}
+
+.hero__media--btn2:hover {
+  background-color: #2d6df8;
+
+  box-shadow: 10px 10px 25px -3px rgba(0, 0, 0, 0.83);
+  -webkit-box-shadow: 10px 10px 25px -3px rgba(0, 0, 0, 0.83);
+  -moz-box-shadow: 10px 10px 25px -3px rgba(0, 0, 0, 0.83);
 }
 
 /*? ==================================== INFO ==================================== */
@@ -242,9 +268,6 @@ main {
 .info__title h2:hover {
   /* transform: scale(1.005, 1.005); */
   translate: 2px -2px;
-}
-
-.info__title::after:hover {
 }
 
 /*? ==================================== DISEÑO ==================================== */

@@ -1,10 +1,6 @@
 /* $ ====================================== tablets ====================================== */
 
 @media (max-width: 992px) {
-  * {
-    max-width: 99vw;
-  }
-
   body #about {
     width: 97.5vw;
   }
@@ -37,22 +33,20 @@
     left: 0;
     right: 0;
     flex-direction: column;
-    /* background-image: url(/assets/img/BACKGROUND__BODY.jpg); */
     backdrop-filter: blur(10px);
     background-color: rgba(255, 255, 255, 0.124);
 
     z-index: 2;
-    /* display: none; */
     justify-content: center;
     align-items: center;
     gap: 40px;
 
-    transform: translateX(1000px);
+    transform: translateX(-1000px);
     transition: all 0.45s ease;
+    /* overflow: hidden; */
   }
 
   #menu-toggle:checked ~ .navbar__list {
-    /* display: flex; */
     transform: translateX(0);
   }
 
@@ -106,6 +100,10 @@
     top: 0;
   }
 
+  .hero__btn {
+    display: none;
+  }
+
   .hero__media--btn {
     background-color: var(--purple);
   }
@@ -126,56 +124,6 @@
     box-shadow: 10px 10px 25px -3px rgba(0, 0, 0, 0.83);
     -webkit-box-shadow: 10px 10px 25px -3px rgba(0, 0, 0, 0.83);
     -moz-box-shadow: 10px 10px 25px -3px rgba(0, 0, 0, 0.83);
-
-    box-shadow: 10px 10px 25px -3px rgba(0, 0, 0, 0.83);
-    -webkit-box-shadow: 10px 10px 25px -3px rgba(0, 0, 0, 0.83);
-    -moz-box-shadow: 10px 10px 25px -3px rgba(0, 0, 0, 0.83);
-  }
-
-  .hero__media--btn:hover,
-  .hero__media--btn2:hover {
-    transition: all 0.3s ease;
-
-    box-shadow: 10px 10px 25px -3px rgba(0, 0, 0, 0.83);
-    -webkit-box-shadow: 10px 10px 25px -3px rgba(0, 0, 0, 0.83);
-    -moz-box-shadow: 10px 10px 25px -3px rgba(0, 0, 0, 0.83);
-  }
-
-  .hero__media--btn:active {
-    background-color: #742df8;
-    transform: scale(1.02);
-
-    box-shadow: 10px 10px 25px -3px rgba(0, 0, 0, 0.83);
-    -webkit-box-shadow: 10px 10px 25px -3px rgba(0, 0, 0, 0.83);
-    -moz-box-shadow: 10px 10px 25px -3px rgba(0, 0, 0, 0.83);
-  }
-
-  .hero__media--btn2:active {
-    background-color: #2d6df8;
-    transform: scale(1.02);
-
-    box-shadow: 10px 10px 25px -3px rgba(0, 0, 0, 0.83);
-    -webkit-box-shadow: 10px 10px 25px -3px rgba(0, 0, 0, 0.83);
-    -moz-box-shadow: 10px 10px 25px -3px rgba(0, 0, 0, 0.83);
-  }
-
-  .hero__media-title {
-    font-size: var(--font-md);
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.72);
-  }
-
-  .hero__media--btn:active,
-  .hero__media--btn2:active {
-    transition: all 0.1s ease;
-
-    box-shadow: 10px 10px 25px -3px rgba(0, 0, 0, 0.83);
-    -webkit-box-shadow: 10px 10px 25px -3px rgba(0, 0, 0, 0.83);
-    -moz-box-shadow: 10px 10px 25px -3px rgba(0, 0, 0, 0.83);
-  }
-
-  .hero__media-title:hover,
-  .hero__media-title:active {
-    transform: translate(0.8px, -0.8px);
   }
 
   /*! INFO */
@@ -341,7 +289,6 @@
     text-overflow: clip;
   }
 }
-
 /* $ ====================================== celus ====================================== */
 
 @media (max-width: 578px) {
@@ -391,12 +338,12 @@
     align-items: center;
     gap: 40px;
 
-    transform: translateX(-500px);
+    transform: translateX(-1000px);
     transition: all 0.45s ease;
   }
 
   #menu-toggle:checked ~ .navbar__list {
-    /* display: flex; */
+    display: flex;
     transform: translateX(0);
   }
 
@@ -421,7 +368,7 @@
     /* min-width: ; */
     /* height: 70vh; */
     background-position: bottom center;
-    justify-content: first baseline;
+    justify-content: center;
     align-items: center;
     text-align: center;
     padding: 65px 15px;
@@ -438,6 +385,10 @@
     text-shadow: none;
     padding-top: 50px;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.72);
+  }
+
+  .hero__btn {
+    display: none;
   }
 
   .hero__media-btn {
@@ -732,7 +683,7 @@
     /* min-width: ; */
     /* height: 70vh; */
     background-position: bottom center;
-    justify-content: first baseline;
+    justify-content: center;
     align-items: center;
     text-align: center;
     padding: 65px 15px;
@@ -746,6 +697,10 @@
   .hero__media-title {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.72);
     font-size: 1rem;
+  }
+
+  .hero__btn {
+    display: none;
   }
 
   footer {
